@@ -1,0 +1,48 @@
+.imageContainer{
+    background-image: url('./../public/WelcomePage.webp'); 
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #E9B9C2;
+    height: 100vh;
+    width: 100%;
+}
+
+.logo{
+    height: auto;
+    width: auto;
+}
+
+.text{
+    height: 90%;
+}
+
+.logo-image-wrapper{
+    height: fit-content;
+    width: fit-content;
+}
+
+.logo-image-wrapper > span {
+    margin: 20px !important;
+}
+
+.text-wrapper{
+    margin: 0% 5%;
+    position: relative;
+    top: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.text-wrapper > h1{
+    font-size: 3vmax;
+}
+.text-wrapper > h2{
+    font-size: 2.7vmax;
+}
+.text-wrapper > h4{
+    font-size: 1.8vmax;
+}

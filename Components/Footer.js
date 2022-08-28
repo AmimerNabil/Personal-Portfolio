@@ -5,7 +5,7 @@ const Footer = () => {
 
     const sendEmail = (e) => {
         e.preventDefault();
-        
+
         emailjs.sendForm(process.env.NEXT_PUBLIC_SERVICE_KEY, process.env.NEXT_PUBLIC_TEMPLATE_ID, e.target, process.env.NEXT_PUBLIC_KEY)
           .then((result) => {
               console.log(result.text);
@@ -66,7 +66,7 @@ const Footer = () => {
                                 <div className="col-md-6 d-flex align-items-stretch">
                                     <div className="info-wrap w-100 p-md-5 p-4 py-5 img">
                                         <h3 className="text-center">Contact information</h3>
-                                        <p className="mb-4">We're open for any suggestion or just to have a chat</p>
+                                        <p className="mb-4">We&lsquo;re open for any suggestion or just to have a chat</p>
                                         <div className="dbox w-100 d-flex align-items-center">
                                             <div className="text pl-3">
                                                 <p><span>Phone:</span> <a href="tel://1234567920">+1 514 833 5350</a></p>

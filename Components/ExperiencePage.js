@@ -15,7 +15,7 @@ import React_skill from './../public/react-skill.png';
 import School_skill from './../public/school-skill.png';
 import Solidity_Skill from './../public/solidity-skill.png';
 import School from './../public/school.png';
-import SQL_skill from './../public/sql.png';
+import SQL_skill from './../public/SQL.png';
 import WP_img from './../public/WP_img.png';
 
 const ExperiencePage = () => {

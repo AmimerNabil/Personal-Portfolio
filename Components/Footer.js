@@ -18,7 +18,7 @@ const Footer = () => {
 
     return (
         <div id="Contact" className="footer-wrapper">
-            <h1 className="contact-me text-center"> Contact Me!</h1>
+            <h1 className="contact-me text-center"> Contact Me</h1>
             <div className="container">
                 <div className="row justify-content-center">
                     <div className="col-md-6 text-center mb-5">

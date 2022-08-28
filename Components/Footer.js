@@ -1,9 +1,24 @@
 
+import emailjs from '@emailjs/browser';
 
+const Footer = ({APIKEY}) => {
 
-const Footer = () => {
+    const sendEmail = (e) => {
+        "hello"
+        e.preventDefault();
+        console.log(APIKEY)
+        emailjs.sendForm('service_2mg51qd', 'template_4nixgh3', e.target, APIKEY)
+          .then((result) => {
+              console.log(result.text);
+          }, (error) => {
+              console.log(error.text);
+          });
+          e.target.reset;
+      };
+
     return (
-        <div className="footer-wrapper">
+        <div id="Contact" className="footer-wrapper">
+            <h1 className="contact-me text-center"> Contact Me!</h1>
             <div className="container">
                 <div className="row justify-content-center">
                     <div className="col-md-6 text-center mb-5">
@@ -17,7 +32,7 @@ const Footer = () => {
                                     <div className="contact-wrap w-100 p-md-5 p-4 py-5">
                                         <h3 className="mb-4">Send me an Email</h3>
                                         <div id="form-message-warning" className="mb-4"></div>
-                                        <form method="POST" id="contactForm" name="contactForm" className="contactForm">
+                                        <form id="contactForm" name="contactForm" className="contactForm" onSubmit={sendEmail}>
                                             <div className="row">
                                                 <div className="col-md-12">
                                                     <div className="form-group">

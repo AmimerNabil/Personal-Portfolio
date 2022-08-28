@@ -1,3 +1,10 @@
+
+.contact-me{
+  padding: 40px 0 0 20px;
+  color: snow;
+  font-weight: 600;
+}
+
 @media print {
     *,
     *::before,

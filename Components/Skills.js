@@ -1,6 +1,5 @@
 import React from "react";
 
-
 const Skill = (skill) => {
     return (
         <div className="d-flex flex-column skill">
@@ -13,10 +12,9 @@ const Skill = (skill) => {
     )
 }
 
-
 const Skills = () => {
     return (
-        <div className="skill-wrapper d-flex flex-column align-items-center">
+        <div id="Skills" className="skill-wrapper d-flex flex-column align-items-center">
             <h2 className="mySkills">My Skills</h2>            
                 <div className="d-flex skills-container">
                     <div className="skills-description"> 

@@ -9,6 +9,12 @@
     width: 100%;
 }
 
+#canvas{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
 .logo{
     height: auto;
     width: auto;
@@ -38,11 +44,31 @@
 }
 
 .text-wrapper > h1{
-    font-size: 3vmax;
+    font-size: 2.8vmax;
 }
 .text-wrapper > h2{
     font-size: 2.7vmax;
 }
 .text-wrapper > h4{
     font-size: 1.8vmax;
+}
+
+/* DEMO-SPECIFIC STYLES */
+.blinker{ 
+    animation: blinker 1s infinite steps(2);
+    display: inline-block;
+    width: 3px;
+    height: 2vmax;
+    margin-left: 5px;
+    border-radius: 3px;
+    background-color: #ff737c;
+}
+  
+@keyframes blinker { 
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }

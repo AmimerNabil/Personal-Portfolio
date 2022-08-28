@@ -11,6 +11,7 @@ import '/styles/divider.css'
 import '/styles/skills.css'
 import '/styles/form_style.css'
 import '/styles/ExperienceCard.css'
+import '/styles/NaviBar.css'
 
 
 function MyApp({ Component, pageProps }) {

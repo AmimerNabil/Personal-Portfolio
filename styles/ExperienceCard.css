@@ -7,6 +7,11 @@
     border-radius: 50px;
     margin: 25px;
     box-shadow: -15px 10px 4px rgb(0, 0, 0, 25%);
+    transition: all 0.1s ease-in;
+}
+
+.experience-card:hover{
+    scale: 102%;
 }
 
 .experience-card-header{
@@ -34,4 +39,8 @@
 
 .image-wrapper{
     margin: 0px 10px;
+}
+
+.reference{
+    word-wrap: break-word;
 }

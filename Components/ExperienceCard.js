@@ -2,6 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 
 const ExperienceCard = ({date, logo, type, description, skills, bg_color, Link}) => {
+
     return (
         <div className='experience-card' style={{backgroundColor: bg_color}}>
             <div className='experience-card-header'>
@@ -17,13 +18,13 @@ const ExperienceCard = ({date, logo, type, description, skills, bg_color, Link})
                 <div>
                     {description}
                     <hr/>
-                    <a href="https://dauntlessdolphins.com"> {Link}</a>
+                    <a className="reference" href={Link}>{Link}</a>
                 </div>
             </div>
             <div className='experience-card-footer'>
                 {
-                    skills.map((image) => (
-                        <div className='image-wrapper'>
+                    skills.map((image, index) => (
+                        <div key={index} className='image-wrapper'>
                             <Image src={image} alt='Skill'/>
                         </div>
                     ))

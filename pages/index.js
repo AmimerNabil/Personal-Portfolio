@@ -3,6 +3,7 @@ import Divider from "./../Components/Divider"
 import SkillsPage from "./../Components/Skills"
 import ExperiencePage from "../Components/ExperiencePage"
 import Footer from "../Components/Footer"
+
 export default function Home() {
   return (
     <div>

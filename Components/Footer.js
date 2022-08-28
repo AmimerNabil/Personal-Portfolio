@@ -1,13 +1,12 @@
 
 import emailjs from '@emailjs/browser';
 
-const Footer = ({APIKEY}) => {
+const Footer = () => {
 
     const sendEmail = (e) => {
-        "hello"
         e.preventDefault();
-        console.log(APIKEY)
-        emailjs.sendForm('service_2mg51qd', 'template_4nixgh3', e.target, APIKEY)
+        
+        emailjs.sendForm(process.env.NEXT_PUBLIC_SERVICE_KEY, process.env.NEXT_PUBLIC_TEMPLATE_ID, e.target, process.env.NEXT_PUBLIC_KEY)
           .then((result) => {
               console.log(result.text);
           }, (error) => {

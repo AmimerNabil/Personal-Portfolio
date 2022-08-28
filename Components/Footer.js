@@ -12,7 +12,8 @@ const Footer = () => {
           }, (error) => {
               console.log(error.text);
           });
-          e.target.reset;
+
+          e.target.reset();
       };
 
     return (

@@ -13,6 +13,7 @@ const NaviBar = () => {
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="ms-auto navCtn">
+                            <Nav.Link href="/CV-2023.pdf"><button className='navBtn'><p style={{ margin: "0" }} className="">My CV</p></button></Nav.Link>
                             <Nav.Link href="/#Skills"><button className='navBtn'><p style={{ margin: "0" }} className="">Skills</p></button></Nav.Link>
                             <Nav.Link href="/#Projects"><button className='navBtn'><p style={{ margin: "0" }} className="">Projects</p></button></Nav.Link>
                             <Nav.Link href="/#Contact"><button className='navBtn'><p style={{ margin: "0" }} className="">Contact Me</p></button></Nav.Link>

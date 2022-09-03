@@ -11,7 +11,7 @@ const WelcomePage = () => {
             document.getElementById('just_a_guy').classList.remove('op0');
         }, 300)
 
-        const letter = '<Just a guy who like to code/>';
+        const letter = '<Just a guy who likes to code/>';
         const timeout = 1000;
         
         for (let i = 0; i <= letter.length; i++) {
